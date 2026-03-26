@@ -120,8 +120,8 @@ void read_tree() {
   fclose(fp);
   struct node *root = array_to_tree(arr, tree_len);
   printf("Из файла загружено дерево: ");
-  symmetry_print(root);
-  printf("\n");
+  symmetry_print(root); printf("\n");
+  tree_print(root);
 }
 
 int main() {
